@@ -1,0 +1,407 @@
+
+/* Main Container */
+.headphones-details {
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 35px 30px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.headphones-details h1 {
+  color: #2563eb;
+  font-size: 42px;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.headphones-details > p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.headphones-details > h2 {
+  color: #2563eb;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.headphones-details h3 {
+  color: #1e293b;
+  font-size: 19px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Accessories */
+.headphones-details .hp-accessory {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 12px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.headphones-details .hp-accessory:hover {
+  background: #dbeafe;
+}
+
+.headphones-details .hp-accessory input {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Rental Days */
+.headphones-details select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.headphones-details select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Rental Summary Box */
+.headphones-details > h3:nth-of-type(2) {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.headphones-details > h3:nth-of-type(2) ~ p {
+  background: #eff6ff;
+  margin: 0;
+  padding: 12px 15px;
+  border-left: 1px solid #dbeafe;
+  border-right: 1px solid #dbeafe;
+}
+
+/* Total Amount Box */
+.headphones-details > h3:nth-of-type(2) ~ h2 {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 18px 12px;
+  margin: 0 0 20px;
+}
+
+/* Booking Button */
+.headphones-details .hp-booking-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px auto 15px;
+  padding: 14px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+  transition: background 0.2s ease;
+}
+
+.headphones-details .hp-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Reviews Section */
+.headphones-details .hp-reviews {
+  width: 100%;
+  margin: 35px auto 0;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.headphones-details .hp-reviews > h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+.headphones-details .hp-reviews > p {
+  margin: 12px 0 22px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Average Rating Box */
+.headphones-details .hp-average-rating {
+  padding: 20px;
+  margin: 0 0 25px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.06);
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.headphones-details .hp-average-number {
+  display: block;
+  color: #2563eb;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.headphones-details .hp-average-stars {
+  display: block;
+  margin-top: 5px;
+  color: #f59e0b;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+/* Review Form Box */
+.headphones-details .hp-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.05);
+  text-align: left;
+}
+
+.headphones-details .hp-review-form h3 {
+  margin: 0;
+}
+
+.headphones-details .hp-review-form label {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.headphones-details .hp-review-form input[type="text"],
+.headphones-details .hp-review-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.headphones-details .hp-review-form input[type="text"] {
+  height: 44px;
+}
+
+.headphones-details .hp-review-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.headphones-details .hp-review-form input:focus,
+.headphones-details .hp-review-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Star Rating */
+.headphones-details .hp-star-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.headphones-details .hp-star-rating button,
+.headphones-details .hp-star-rating button:hover,
+.headphones-details .hp-star-rating button:focus,
+.headphones-details .hp-star-rating button:active {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  font-size: 32px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.headphones-details .hp-star-rating button.selected-star {
+  color: #f59e0b;
+}
+
+/* Submit Review Button */
+.headphones-details .hp-review-form .hp-submit-review {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.headphones-details .hp-review-form .hp-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.headphones-details .hp-review-list {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 28px auto 0;
+}
+
+.headphones-details .hp-review-list > h3 {
+  margin-bottom: 15px;
+}
+
+.headphones-details .hp-review-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  padding: 18px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fafc;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.headphones-details .hp-review-item h4 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.headphones-details .hp-review-item p {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.headphones-details .hp-review-item .hp-review-stars {
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.headphones-details .hp-review-item small {
+  display: block;
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .headphones-details {
+    width: calc(100% - 24px);
+    max-width: 480px;
+    margin: 20px auto;
+    padding: 25px 18px;
+    border-radius: 16px;
+  }
+
+  .headphones-details h1 {
+    font-size: 34px;
+  }
+
+  .headphones-details h2 {
+    font-size: 22px;
+  }
+
+  .headphones-details h3 {
+    font-size: 19px;
+  }
+
+  .headphones-details .hp-accessory {
+    font-size: 13px;
+    padding: 11px 9px;
+  }
+
+  .headphones-details .hp-reviews > h2 {
+    font-size: 23px;
+  }
+
+  .headphones-details .hp-review-form {
+    padding: 15px;
+  }
+
+  .headphones-details .hp-star-rating button {
+    font-size: 30px;
+  }
+}

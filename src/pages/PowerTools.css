@@ -1,0 +1,334 @@
+
+/* Power Tools Main Container */
+.power-tools-details {
+   width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 35px 30px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.power-tools-details h1 {
+ color: #2563eb;
+  font-size: 42px;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.power-tools-details > p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Section Headings */
+.power-tools-details h3 {
+   color: #1e293b;
+  font-size: 19px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.power-tools-details h2 {
+  color: #2563eb;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* Accessories */
+.pt-accessory {
+ display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 12px;
+  margin: 10px 0;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pt-accessory:hover {
+  background: #dbeafe;
+}
+
+.pt-accessory input {
+ width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #2563eb;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+
+/* Rental Days Dropdown */
+.pt-rental-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pt-rental-select:focus {
+   border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Rental Summary */
+.power-tools-details > h2:last-of-type {
+   padding: 14px;
+  background: #eff6ff;
+  border-radius: 10px;
+}
+
+/* Booking Button */
+.pt-booking-button {
+   width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pt-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Reviews Section */
+.pt-reviews {
+   margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.pt-reviews > h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+/* Average Rating */
+.pt-average-rating {
+  padding: 20px;
+  background: #eff6ff;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pt-average-number {
+   display: block;
+  color: #2563eb;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.pt-average-stars {
+  display: block;
+  margin-top: 5px;
+  color: #f59e0b;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.pt-average-rating p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Review Form */
+.pt-review-form {
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.pt-review-form h3 {
+   margin-top: 0;
+}
+
+.pt-form-group {
+  margin-bottom: 18px;
+}
+
+.pt-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pt-form-group input,
+.pt-form-group textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.pt-form-group input:focus,
+.pt-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.pt-form-group textarea {
+  resize: vertical;
+}
+
+/* Star Rating */
+.pt-star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.pt-star-rating button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.pt-star-rating button.selected,
+.pt-star-rating button:hover {
+  color: #f59e0b;
+}
+
+/* Submit Review Button */
+.pt-submit-review {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 0;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pt-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.pt-review-list {
+  margin-top: 28px;
+}
+
+.pt-review-list > h3 {
+  margin-bottom: 15px;
+}
+
+.pt-no-reviews {
+  padding: 15px;
+  color: #64748b;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pt-review-item {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.pt-review-item h4 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.pt-review-stars {
+  margin-bottom: 8px;
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.pt-review-item p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .power-tools-details {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    padding: 25px 18px;
+    border-radius: 16px;
+  }
+
+  .power-tools-details h1 {
+    font-size: 34px;
+  }
+
+  .power-tools-details h2 {
+    font-size: 22px;
+  }
+
+  .pt-accessory {
+    font-size: 13px;
+    padding: 11px 9px;
+  }
+
+  .pt-review-form {
+    padding: 15px;
+  }
+
+  .pt-star-rating button {
+    font-size: 30px;
+  }
+}

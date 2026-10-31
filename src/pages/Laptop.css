@@ -1,0 +1,390 @@
+
+/* Main Container */
+.laptop-details {
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 25px 22px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.laptop-details h1 {
+  color: #2563eb;
+  font-size: 30px;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.laptop-details > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.laptop-details > h2 {
+  color: #2563eb;
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.laptop-details h3 {
+  color: #1e293b;
+  font-size: 17px;
+  margin: 20px 0 12px;
+}
+
+/* Accessories */
+.laptop-details .laptop-accessory {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 10px 12px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 9px;
+  color: #334155;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.laptop-details .laptop-accessory:hover {
+  background: #dbeafe;
+}
+
+.laptop-details .laptop-accessory input {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Rental Days */
+.laptop-details select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.laptop-details select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Rental Summary Box */
+.laptop-details > h3:nth-of-type(2) {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px 10px 0 0;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+.laptop-details > h3:nth-of-type(2) ~ p {
+  background: #eff6ff;
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 1px solid #dbeafe;
+  border-right: 1px solid #dbeafe;
+}
+
+/* Total Amount Box */
+.laptop-details > h3:nth-of-type(2) ~ h2 {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 14px 10px;
+  margin: 0 0 18px;
+}
+
+/* Total Amount Class */
+.laptop-details .laptop-total {
+  color: #2563eb;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+/* Booking Button */
+.laptop-details .laptop-booking-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px auto 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+  transition: background 0.2s ease;
+}
+
+.laptop-details .laptop-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Reviews Section */
+.laptop-details .laptop-reviews {
+  width: 100%;
+  margin: 28px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.laptop-details .laptop-reviews > h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 21px;
+  margin: 0 0 16px;
+}
+
+/* Average Rating Box */
+.laptop-details .laptop-average-rating {
+  padding: 15px;
+  margin: 0 0 18px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Review Form */
+.laptop-details .laptop-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px auto;
+  padding: 15px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.laptop-details .laptop-review-form h3 {
+  margin: 0;
+}
+
+.laptop-details .laptop-review-form label {
+  display: block;
+  width: 100%;
+  color: #334155;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.laptop-details .laptop-review-form input[type="text"],
+.laptop-details .laptop-review-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0 0;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.laptop-details .laptop-review-form input[type="text"] {
+  height: 40px;
+}
+
+.laptop-details .laptop-review-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.laptop-details .laptop-review-form input:focus,
+.laptop-details .laptop-review-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Star Rating */
+.laptop-details .laptop-star-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.laptop-details .laptop-star-rating button,
+.laptop-details .laptop-star-rating button:hover,
+.laptop-details .laptop-star-rating button:focus,
+.laptop-details .laptop-star-rating button:active {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 28px;
+  line-height: 1.2;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.laptop-details .laptop-star-rating button.selected-star {
+  color: #f59e0b;
+}
+
+/* Submit Review Button */
+.laptop-details .laptop-review-form .laptop-submit-review {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.laptop-details .laptop-review-form .laptop-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.laptop-details .laptop-review-list {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 22px auto 0;
+}
+
+.laptop-details .laptop-review-list > h3 {
+  margin-bottom: 12px;
+}
+
+.laptop-details .laptop-review-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 12px;
+  padding: 13px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fafc;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.laptop-details .laptop-review-item h4 {
+  margin: 0 0 6px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.laptop-details .laptop-review-item p {
+  margin: 7px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.laptop-details .laptop-review-item .laptop-review-stars {
+  color: #f59e0b;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 4px 0;
+}
+
+.laptop-details .laptop-review-item small {
+  display: block;
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 11px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .laptop-details {
+    width: calc(100% - 24px);
+    max-width: 480px;
+    margin: 16px auto;
+    padding: 20px 15px;
+    border-radius: 14px;
+  }
+
+  .laptop-details h1 {
+    font-size: 27px;
+  }
+
+  .laptop-details > h2 {
+    font-size: 20px;
+  }
+
+  .laptop-details h3 {
+    font-size: 16px;
+  }
+
+  .laptop-details .laptop-accessory {
+    font-size: 12px;
+    padding: 9px;
+  }
+
+  .laptop-details .laptop-reviews > h2 {
+    font-size: 20px;
+  }
+
+  .laptop-details .laptop-review-form {
+    padding: 12px;
+  }
+
+  .laptop-details .laptop-star-rating button {
+    font-size: 27px;
+  }
+}

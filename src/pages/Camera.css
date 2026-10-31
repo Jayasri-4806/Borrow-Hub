@@ -1,0 +1,324 @@
+
+/* Main Camera Container */
+.camera-details-page {
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 25px 22px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.camera-details-page h1 {
+  color: #2563eb;
+  font-size: 30px;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.camera-details-page > p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.camera-details-page > h2 {
+  color: #2563eb;
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.camera-details-page h3 {
+  color: #1e293b;
+  font-size: 17px;
+  margin: 20px 0 12px;
+}
+
+/* Accessories */
+.camera-details-page .camera-accessory {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 10px 12px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 9px;
+  color: #334155;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.camera-details-page .camera-accessory:hover {
+  background: #dbeafe;
+}
+
+.camera-details-page .camera-accessory input {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Rental Days */
+.camera-details-page select {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.camera-details-page select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Total Amount */
+.camera-details-page .camera-total {
+  color: #2563eb;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+/* Booking Button */
+.camera-details-page .camera-booking-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 18px auto 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.camera-details-page .camera-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Reviews Section */
+.camera-details-page .camera-reviews {
+  width: 100%;
+  margin: 28px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.camera-details-page .camera-reviews h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 21px;
+  margin: 0 0 16px;
+}
+
+/* Review Form */
+.camera-details-page .camera-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin: 16px auto;
+}
+
+.camera-details-page .camera-review-form label {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+}
+
+.camera-details-page .camera-review-form input,
+.camera-details-page .camera-review-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.camera-details-page .camera-review-form input:focus,
+.camera-details-page .camera-review-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.camera-details-page .camera-review-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Star Rating */
+.camera-details-page .camera-star-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.camera-details-page .camera-star-rating button,
+.camera-details-page .camera-star-rating button:hover,
+.camera-details-page .camera-star-rating button:focus,
+.camera-details-page .camera-star-rating button:active {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 28px;
+  line-height: 1.2;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.camera-details-page .camera-star-rating button.selected-star {
+  color: #f59e0b;
+}
+
+/* Submit Review */
+.camera-details-page .camera-review-form .camera-submit-review {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.camera-details-page .camera-review-form .camera-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.camera-details-page .camera-review-list {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin: 22px auto 0;
+  text-align: left;
+}
+
+.camera-details-page .camera-review-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 12px;
+  padding: 13px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fafc;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.camera-details-page .camera-review-item h4 {
+  margin: 0 0 6px;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.camera-details-page .camera-review-item p {
+  margin: 7px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.camera-details-page .camera-review-item .camera-review-stars {
+  color: #f59e0b;
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.camera-details-page .camera-review-item small {
+  display: block;
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 11px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .camera-details-page {
+    width: calc(100% - 24px);
+    max-width: 480px;
+    margin: 16px auto;
+    padding: 20px 15px;
+    border-radius: 14px;
+  }
+
+  .camera-details-page h1 {
+    font-size: 28px;
+  }
+
+  .camera-details-page > h2 {
+    font-size: 20px;
+  }
+
+  .camera-details-page h3 {
+    font-size: 17px;
+  }
+
+  .camera-details-page .camera-accessory {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .camera-details-page .camera-reviews h2 {
+    font-size: 21px;
+  }
+
+  .camera-details-page .camera-review-form,
+  .camera-details-page .camera-review-list {
+    max-width: 100%;
+  }
+}

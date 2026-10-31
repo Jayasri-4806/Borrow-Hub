@@ -1,0 +1,427 @@
+
+/* Main Container */
+.books-details {
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 35px 30px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.books-details h1 {
+  color: #2563eb;
+  font-size: 42px;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.books-details > p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Section Headings */
+.books-details h2 {
+  color: #2563eb;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.books-details h3 {
+  color: #1e293b;
+  font-size: 19px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Accessories */
+.books-details .books-accessory {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 12px;
+  margin: 10px 0;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.books-details .books-accessory:hover {
+  background: #dbeafe;
+}
+
+.books-details .books-accessory input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Rental Days */
+.books-details select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.books-details select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Rental Summary Box */
+.books-details > h3:nth-of-type(2) {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.books-details > h3:nth-of-type(2) ~ p {
+  background: #eff6ff;
+  margin: 0;
+  padding: 12px 15px;
+  border-left: 1px solid #dbeafe;
+  border-right: 1px solid #dbeafe;
+}
+
+/* Total Amount Box */
+.books-details > h3:nth-of-type(2) ~ h2 {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 18px 12px;
+  margin: 0 0 20px;
+}
+
+/* Booking Button */
+.books-details .books-booking-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px auto 15px;
+  padding: 14px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+  transition: background 0.2s ease;
+}
+
+.books-details .books-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Reviews Section */
+.books-details .books-reviews {
+  width: 100%;
+  margin: 35px auto 0;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.books-details .books-reviews > h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+/* Average Rating Box */
+.books-details .books-average-rating {
+  padding: 20px;
+  margin: 0 0 25px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.06);
+  text-align: center;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.books-details .books-average-rating p {
+  margin: 8px 0 0;
+}
+
+.books-details .books-average-number {
+  display: block;
+  color: #2563eb;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.books-details .books-average-stars {
+  display: block;
+  margin-top: 5px;
+  color: #f59e0b;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+/* Review Form Box */
+.books-details .books-review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.05);
+  text-align: left;
+}
+
+.books-details .books-review-form h3 {
+  margin: 0;
+}
+
+.books-details .books-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.books-details .books-form-group label {
+  display: block;
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Review Inputs */
+.books-details .books-form-group input[type="text"],
+.books-details .books-form-group textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.books-details .books-form-group input[type="text"] {
+  height: 44px;
+}
+
+.books-details .books-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.books-details .books-form-group input:focus,
+.books-details .books-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Star Rating */
+.books-details .books-star-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.books-details .books-star-rating button,
+.books-details .books-star-rating button:hover,
+.books-details .books-star-rating button:focus,
+.books-details .books-star-rating button:active {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  font-size: 32px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.books-details .books-star-rating button.selected-star {
+  color: #f59e0b;
+}
+
+/* Submit Review Button */
+.books-details .books-review-form .books-submit-review {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.books-details .books-review-form .books-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.books-details .books-review-list {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 28px auto 0;
+}
+
+.books-details .books-review-list > h3 {
+  margin-bottom: 15px;
+}
+
+.books-details .books-no-reviews {
+  padding: 15px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.books-details .books-review-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  padding: 18px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fafc;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.books-details .books-review-item h4 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.books-details .books-review-item p {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.books-details .books-review-item .books-review-stars {
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.books-details .books-review-item small {
+  display: block;
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .books-details {
+    width: calc(100% - 24px);
+    max-width: 480px;
+    margin: 20px auto;
+    padding: 25px 18px;
+    border-radius: 16px;
+  }
+
+  .books-details h1 {
+    font-size: 34px;
+  }
+
+  .books-details h2 {
+    font-size: 22px;
+  }
+
+  .books-details h3 {
+    font-size: 19px;
+  }
+
+  .books-details .books-accessory {
+    font-size: 13px;
+    padding: 11px 9px;
+  }
+
+  .books-details .books-reviews > h2 {
+    font-size: 23px;
+  }
+
+  .books-details .books-review-form {
+    padding: 15px;
+  }
+
+  .books-details .books-star-rating {
+    gap: 5px;
+  }
+
+  .books-details .books-star-rating button {
+    font-size: 30px;
+  }
+}

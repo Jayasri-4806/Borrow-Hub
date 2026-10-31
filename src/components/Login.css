@@ -1,0 +1,164 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.auth-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.auth-visual {
+  position: relative;
+  min-height: 600px;
+  background: #1e3a8a;
+}
+
+.auth-visual img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.auth-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.9),
+    rgba(15, 23, 42, 0.1)
+  );
+}
+
+.auth-visual-content {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 30px;
+  right: 25px;
+  color: white;
+}
+
+.auth-visual-content h1 {
+  font-size: 32px;
+}
+
+.auth-form-panel {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-brand {
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-form-panel h2 {
+  margin: 28px 0 8px;
+  color: #0f172a;
+}
+
+.auth-subtitle {
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+.auth-form-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form-panel label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-form-panel input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.auth-form-panel input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.auth-submit {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background: #1d4ed8;
+}
+
+.auth-message {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.auth-switch {
+  margin-top: 20px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.auth-switch a,
+.auth-back {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-back {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .auth-page {
+    padding: 15px;
+  }
+
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-visual {
+    min-height: 220px;
+  }
+
+  .auth-form-panel {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,333 @@
+
+/* Camping Tent Main Container */
+.camping-tent-details {
+  width: 90%;
+  max-width: 480px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 35px 30px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+.camping-tent-details h1 {
+  color: #2563eb;
+  font-size: 42px;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.camping-tent-details > p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Section Headings */
+.camping-tent-details h3 {
+  color: #1e293b;
+  font-size: 19px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.camping-tent-details h2 {
+  color: #2563eb;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+/* Accessories */
+.tent-accessory {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 12px;
+  margin: 10px 0;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tent-accessory:hover {
+  background: #dbeafe;
+}
+
+.tent-accessory input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #2563eb;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Rental Days Dropdown */
+.tent-rental-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.tent-rental-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Total Amount */
+.camping-tent-details > h2:last-of-type {
+  padding: 14px;
+  background: #eff6ff;
+  border-radius: 10px;
+}
+
+/* Booking Button */
+.tent-booking-button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tent-booking-button:hover {
+  background: #1d4ed8;
+}
+
+/* Customer Reviews */
+.tent-reviews {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.tent-reviews > h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+/* Average Rating */
+.tent-average-rating {
+  padding: 20px;
+  background: #eff6ff;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tent-average-number {
+  display: block;
+  color: #2563eb;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.tent-average-stars {
+  display: block;
+  margin-top: 5px;
+  color: #f59e0b;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.tent-average-rating p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Review Form */
+.tent-review-form {
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.tent-review-form h3 {
+  margin-top: 0;
+}
+
+.tent-form-group {
+  margin-bottom: 18px;
+}
+
+.tent-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tent-form-group input,
+.tent-form-group textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.tent-form-group input:focus,
+.tent-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.tent-form-group textarea {
+  resize: vertical;
+}
+
+/* Star Rating */
+.tent-star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.tent-star-rating button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.tent-star-rating button.selected,
+.tent-star-rating button:hover {
+  color: #f59e0b;
+}
+
+/* Submit Review Button */
+.tent-submit-review {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 0;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tent-submit-review:hover {
+  background: #1d4ed8;
+}
+
+/* Review List */
+.tent-review-list {
+  margin-top: 28px;
+}
+
+.tent-review-list > h3 {
+  margin-bottom: 15px;
+}
+
+.tent-no-reviews {
+  padding: 15px;
+  color: #64748b;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tent-review-item {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.tent-review-item h4 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.tent-review-stars {
+  margin-bottom: 8px;
+  color: #f59e0b;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.tent-review-item p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .camping-tent-details {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    padding: 25px 18px;
+    border-radius: 16px;
+  }
+
+  .camping-tent-details h1 {
+    font-size: 34px;
+  }
+
+  .camping-tent-details h2 {
+    font-size: 22px;
+  }
+
+  .tent-accessory {
+    font-size: 13px;
+    padding: 11px 9px;
+  }
+
+  .tent-review-form {
+    padding: 15px;
+  }
+
+  .tent-star-rating button {
+    font-size: 30px;
+  }
+}

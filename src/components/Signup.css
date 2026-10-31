@@ -1,0 +1,15 @@
+
+/* Signup-specific styles.
+   Shared form design comes from Login.css. */
+
+.auth-form-panel form {
+  gap: 0;
+}
+
+.auth-form-panel input {
+  box-sizing: border-box;
+}
+
+.auth-form-panel form .auth-submit {
+  margin-top: 2px;
+}

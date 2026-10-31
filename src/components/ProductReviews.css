@@ -1,0 +1,156 @@
+
+.product-reviews {
+  margin: 35px auto;
+  padding: 28px;
+  max-width: 850px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  color: #1F1635;
+  border: 1px solid #EDE9FE;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(76, 29, 149, 0.07);
+}
+
+.product-reviews h2 {
+  margin: 0 0 22px;
+  font-size: 26px;
+}
+
+.reviews-summary {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background: #F5F3FF;
+}
+
+.reviews-summary strong {
+  font-size: 28px;
+}
+
+.reviews-summary p {
+  margin: 8px 0 0;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.reviews-stars {
+  display: inline-block;
+  margin-left: 12px;
+  color: #F59E0B;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-form label {
+  color: #374151;
+  font-weight: 600;
+}
+
+.rating-picker {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.star {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #D1D5DB;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.star.active {
+  color: #F59E0B;
+}
+
+.review-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #DDD6FE;
+  border-radius: 10px;
+  font: inherit;
+  resize: vertical;
+}
+
+.review-form textarea:focus {
+  outline: none;
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.submit-review-btn {
+  align-self: flex-start;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  background: #7C3AED;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-review-btn:hover {
+  background: #6D28D9;
+}
+
+.review-list {
+  margin-top: 28px;
+}
+
+.no-reviews {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.review-item {
+  padding: 18px 0;
+  border-top: 1px solid #EDE9FE;
+}
+
+.review-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-item-top .reviews-stars {
+  margin-left: 0;
+  font-size: 18px;
+}
+
+.review-item-top small {
+  color: #6B7280;
+}
+
+.review-item p {
+  margin-bottom: 0;
+  color: #4B5563;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .product-reviews {
+    padding: 20px;
+    margin: 25px 16px;
+  }
+
+  .product-reviews h2 {
+    font-size: 23px;
+  }
+
+  .review-item-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
